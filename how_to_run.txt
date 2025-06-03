@@ -1,0 +1,22 @@
+# How to Run This Project
+
+This project builds a regional temperature forecasting pipeline using ERA5 reanalysis data and Facebook Prophet.
+
+👉 Please run the notebooks in the following order:
+
+1. `hypothetical_stations.ipynb`
+   - Generates 242 random weather station points using a shapefile.
+
+2. `subset_era5_data.ipynb`
+   - Run this notebook separately for each year.
+   - It loads ERA5 NetCDF data and clips it to the generated stations.
+   - ⚠️ Make sure you download ERA5 **hourly data** for each year (2015 to 2024) from the Copernicus Climate Data Store.
+
+3. `merge_clean_data.ipynb`
+   - Loads all yearly subsets and merges them into a single CSV file for modeling.
+
+4. `fb_prophet_model.ipynb`
+   - Trains one forecasting model per station using sliding windows.
+   - The example runs for a single station; loop through all to scale.
+
+📁 Make sure your folders (e.g., `2015/`, `2016/`) and shapefiles are in the correct paths as referenced in the notebooks.
