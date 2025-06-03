@@ -37,12 +37,12 @@ Although the example here uses Pakistan with 242 hypothetical stations, the pipe
 
 ## 📁 Files in This Repo
 
-- `hypothetical_stations.ipynb` — Generate station points using shapefile
-- `subset_era5_data.ipynb` — Subset and save yearly NetCDF data
-- `merge_clean_data.ipynb` — Merge yearly subsets into full dataset
-- `fb_prophet_model - Temperature.ipynb` — Forecast model + evaluation
-- how_to_run.txt — Step-by-step notebook execution guide
-- requirements.txt — Install dependencies
+- hypothetical_stations.ipynb — Generate station points using shapefile  
+- subset_era5_data.ipynb — Subset and save yearly NetCDF data  
+- merge_clean_data.ipynb — Merge yearly subsets into full dataset  
+- fb_prophet_model.ipynb — Forecast model + evaluation  
+- how_to_run.txt — Step-by-step notebook execution guide  
+- requirements.txt — Install dependencies  
 
 ---
 
