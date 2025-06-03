@@ -12,11 +12,11 @@ Although the example here uses Pakistan with 242 hypothetical stations, the pipe
 - `hypothetical_stations.ipynb`: Creates evenly distributed weather stations using a user-provided boundary shapefile.
 
 ### 2. 📦 Subset ERA5 Data by Year
-- `merge_clean_data.ipynb`: Subsets large hourly ERA5 NetCDF files (downloaded year-by-year from CDS).
+- `subset_era5_data.ipynb`: Subsets large hourly ERA5 NetCDF files (downloaded year-by-year from CDS).
 - Saves clipped data per station into yearly folders (e.g., `2015/`, `2016/`…).
 
 ### 3. 🔀 Merge Preprocessed Data
-- `subset_era5_data.ipynb`: Loads yearly subsets and merges them into a unified CSV dataset suitable for model training.
+- `merge_clean_data.ipynb`: Loads yearly subsets and merges them into a unified CSV dataset suitable for model training.
 
 ### 4. 📈 Forecast Temperature Using Prophet
 - `fb_prophet_model.ipynb`: Trains a **separate sliding-window forecasting model for each station** using **Facebook Prophet**
@@ -41,6 +41,8 @@ Although the example here uses Pakistan with 242 hypothetical stations, the pipe
 - `subset_era5_data.ipynb` — Subset and save yearly NetCDF data
 - `merge_clean_data.ipynb` — Merge yearly subsets into full dataset
 - `fb_prophet_model - Temperature.ipynb` — Forecast model + evaluation
+- how_to_run.txt — Step-by-step notebook execution guide
+- requirements.txt — Install dependencies
 
 ---
 
