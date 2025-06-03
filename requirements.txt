@@ -1,0 +1,9 @@
+pandas
+numpy
+matplotlib
+prophet
+scikit-learn
+geopandas
+xarray
+netCDF4
+shapely
